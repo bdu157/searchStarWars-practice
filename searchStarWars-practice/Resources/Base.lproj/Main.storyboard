@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="dHz-Mg-PN9">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Star Wars Search-->
+        <scene sceneID="9bh-4e-wta">
+            <objects>
+                <tableViewController id="HET-eu-z0I" customClass="StarWarsSearchTableViewController" customModule="searchStarWars_practice" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="5fN-RI-S7s">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <view key="tableHeaderView" contentMode="scaleToFill" id="Zn8-2Y-h1P">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="63"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="6H4-dg-8Me">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="63"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </searchBar>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="6H4-dg-8Me" firstAttribute="top" secondItem="Zn8-2Y-h1P" secondAttribute="top" id="HI7-Ri-jN3"/>
+                                <constraint firstAttribute="trailing" secondItem="6H4-dg-8Me" secondAttribute="trailing" id="cnH-9q-lsq"/>
+                                <constraint firstItem="6H4-dg-8Me" firstAttribute="leading" secondItem="Zn8-2Y-h1P" secondAttribute="leading" id="oGC-jy-ZHj"/>
+                                <constraint firstAttribute="bottom" secondItem="6H4-dg-8Me" secondAttribute="bottom" id="sPB-d7-wbK"/>
+                            </constraints>
+                        </view>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="PersonCell" rowHeight="132" id="lwQ-BH-PVM" customClass="PersonTableViewCell" customModule="searchStarWars_practice" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="91" width="375" height="132"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="lwQ-BH-PVM" id="A1e-PS-1R0">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="131.66666666666666"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="K1v-aC-9bh">
+                                            <rect key="frame" x="16" y="11" width="343" height="110"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F80-Fu-6W7">
+                                                    <rect key="frame" x="0.0" y="0.0" width="343" height="59.333333333333336"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gender" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zb2-62-l77">
+                                                    <rect key="frame" x="0.0" y="64.333333333333329" width="343" height="20.333333333333329"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Birth Year" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0NO-O8-5n1">
+                                                    <rect key="frame" x="0.0" y="89.666666666666671" width="343" height="20.333333333333329"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </stackView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="K1v-aC-9bh" firstAttribute="leading" secondItem="A1e-PS-1R0" secondAttribute="leadingMargin" id="825-oX-iyd"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="K1v-aC-9bh" secondAttribute="trailing" id="Bid-nh-jTV"/>
+                                        <constraint firstItem="K1v-aC-9bh" firstAttribute="top" secondItem="A1e-PS-1R0" secondAttribute="topMargin" id="Hfg-nE-mCE"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="K1v-aC-9bh" secondAttribute="bottom" id="Mit-Kg-bKY"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="firstYearLabel" destination="0NO-O8-5n1" id="Jzw-ZD-0ha"/>
+                                    <outlet property="genderLabel" destination="Zb2-62-l77" id="zZu-58-Fkx"/>
+                                    <outlet property="nameLabel" destination="F80-Fu-6W7" id="BAc-id-9xB"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="HET-eu-z0I" id="jqI-jR-guk"/>
+                            <outlet property="delegate" destination="HET-eu-z0I" id="Tmw-xa-38G"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Star Wars Search" id="LSC-f9-eMG"/>
+                    <connections>
+                        <outlet property="searchBar" destination="6H4-dg-8Me" id="TSy-y5-nix"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5Qa-2L-JVE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="527.20000000000005" y="57.635467980295566"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="zgP-Bp-1ux">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="dHz-Mg-PN9" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="3Sm-sC-qEF">
+                        <rect key="frame" x="0.0" y="44" width="375" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="HET-eu-z0I" kind="relationship" relationship="rootViewController" id="42O-KW-PMO"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qx2-jD-pNH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-196" y="58"/>
+        </scene>
+    </scenes>
+</document>

@@ -8,20 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		0B3B3A1722A9F08D00F17F0B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B3B3A1622A9F08D00F17F0B /* AppDelegate.swift */; };
-		0B3B3A1922A9F08D00F17F0B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B3B3A1822A9F08D00F17F0B /* ViewController.swift */; };
 		0B3B3A1C22A9F08D00F17F0B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B3B3A1A22A9F08D00F17F0B /* Main.storyboard */; };
 		0B3B3A1E22A9F08E00F17F0B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B3B3A1D22A9F08E00F17F0B /* Assets.xcassets */; };
 		0B3B3A2122A9F08E00F17F0B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B3B3A1F22A9F08E00F17F0B /* LaunchScreen.storyboard */; };
+		0B3B3A2B22A9F9AC00F17F0B /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B3B3A2A22A9F9AC00F17F0B /* Person.swift */; };
+		0B3B3A2D22A9FDE100F17F0B /* StarWarsSearchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B3B3A2C22A9FDE100F17F0B /* StarWarsSearchTableViewController.swift */; };
+		0B3B3A2F22A9FEA700F17F0B /* PersonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B3B3A2E22A9FEA700F17F0B /* PersonTableViewCell.swift */; };
+		0B3B3A3522A9FFAF00F17F0B /* PersonController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B3B3A3422A9FFAF00F17F0B /* PersonController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0B3B3A1322A9F08D00F17F0B /* searchStarWars-practice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "searchStarWars-practice.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B3B3A1622A9F08D00F17F0B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0B3B3A1822A9F08D00F17F0B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		0B3B3A1B22A9F08D00F17F0B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0B3B3A1D22A9F08E00F17F0B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0B3B3A2022A9F08E00F17F0B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0B3B3A2222A9F08E00F17F0B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0B3B3A2A22A9F9AC00F17F0B /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		0B3B3A2C22A9FDE100F17F0B /* StarWarsSearchTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarWarsSearchTableViewController.swift; sourceTree = "<group>"; };
+		0B3B3A2E22A9FEA700F17F0B /* PersonTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonTableViewCell.swift; sourceTree = "<group>"; };
+		0B3B3A3422A9FFAF00F17F0B /* PersonController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +60,49 @@
 		0B3B3A1522A9F08D00F17F0B /* searchStarWars-practice */ = {
 			isa = PBXGroup;
 			children = (
+				0B3B3A3122A9FF2900F17F0B /* Resources */,
+				0B3B3A3022A9FF1700F17F0B /* Model */,
+				0B3B3A3322A9FF3D00F17F0B /* ViewControllers */,
+				0B3B3A3222A9FF3600F17F0B /* Views */,
+			);
+			path = "searchStarWars-practice";
+			sourceTree = "<group>";
+		};
+		0B3B3A3022A9FF1700F17F0B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0B3B3A2A22A9F9AC00F17F0B /* Person.swift */,
+				0B3B3A3422A9FFAF00F17F0B /* PersonController.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0B3B3A3122A9FF2900F17F0B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0B3B3A2222A9F08E00F17F0B /* Info.plist */,
 				0B3B3A1622A9F08D00F17F0B /* AppDelegate.swift */,
-				0B3B3A1822A9F08D00F17F0B /* ViewController.swift */,
 				0B3B3A1A22A9F08D00F17F0B /* Main.storyboard */,
 				0B3B3A1D22A9F08E00F17F0B /* Assets.xcassets */,
 				0B3B3A1F22A9F08E00F17F0B /* LaunchScreen.storyboard */,
-				0B3B3A2222A9F08E00F17F0B /* Info.plist */,
 			);
-			path = "searchStarWars-practice";
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		0B3B3A3222A9FF3600F17F0B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0B3B3A2E22A9FEA700F17F0B /* PersonTableViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		0B3B3A3322A9FF3D00F17F0B /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				0B3B3A2C22A9FDE100F17F0B /* StarWarsSearchTableViewController.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,7 +176,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0B3B3A1922A9F08D00F17F0B /* ViewController.swift in Sources */,
+				0B3B3A2B22A9F9AC00F17F0B /* Person.swift in Sources */,
+				0B3B3A2D22A9FDE100F17F0B /* StarWarsSearchTableViewController.swift in Sources */,
+				0B3B3A2F22A9FEA700F17F0B /* PersonTableViewCell.swift in Sources */,
+				0B3B3A3522A9FFAF00F17F0B /* PersonController.swift in Sources */,
 				0B3B3A1722A9F08D00F17F0B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -284,7 +328,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = C22Z4773SH;
-				INFOPLIST_FILE = "searchStarWars-practice/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/searchStarWars-practice/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,7 +346,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = C22Z4773SH;
-				INFOPLIST_FILE = "searchStarWars-practice/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/searchStarWars-practice/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
